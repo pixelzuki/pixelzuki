@@ -214,6 +214,16 @@ p {
     margin-bottom: 25px
 }
 
+.sm-icon{
+
+    fill: #e44c3c;
+}
+
+.sm-icon:hover{
+    
+    fill: #000000;
+}
+
 .red-strong{
     color: #e44c3c;
 }
