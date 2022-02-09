@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Pixell';
+    src: url('https://pixelzuki.xyz/css/fonts/pixel.woff2') format('woff2'),
+         url('https://pixelzuki.xyz/css/fonts/pixel.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
