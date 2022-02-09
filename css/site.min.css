@@ -424,7 +424,7 @@ p {
 .loading {
     width: 24px;
     height: 24px;
-    background: url(../img/loading.gif);
+    background: url(../img/torii.gif);
     display: none;
     background-size: contain;
     vertical-align: -3px;
