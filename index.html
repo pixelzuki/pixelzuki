@@ -1,61 +1,572 @@
+
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>404 &middot; PixelZuki</title>
-    <style type="text/css" media="screen">
-      body {
-        background-color: #f1f1f1;
-        margin: 0;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      }
+<html lang="en-US">
 
-      .container { margin: 50px auto 40px auto; width: 600px; text-align: center; }
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <!-- Title  -->
+    <title>PixelZuki</title>
+    <meta name="description" content="10,000 Pixelated Zukis on Ethereum" />
+    <meta name="keywords" content="NFT, Ethereum" />
+    <meta name="author" content="humans.txt">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Oswald:300,400,700|Teko:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="css/fonts/stylesheet.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.6.6/glider.min.css">
+    <link rel="stylesheet" href="css/site.min.css">
+</head>
 
-      a { color: #4183c4; text-decoration: none; }
-      a:hover { text-decoration: underline; }
-
-      h1 { width: 800px; position:relative; left: -100px; letter-spacing: -1px; line-height: 60px; font-size: 60px; font-weight: 100; margin: 0px 0 50px 0; text-shadow: 0 1px 0 #fff; }
-      p { color: rgba(0, 0, 0, 0.5); margin: 20px 0; line-height: 1.6; }
-
-      ul { list-style: none; margin: 25px 0; padding: 0; }
-      li { display: table-cell; font-weight: bold; width: 1%; }
-
-      .logo { display: inline-block; margin-top: 35px; }
-      .logo-img-2x { display: none; }
-      @media
-      only screen and (-webkit-min-device-pixel-ratio: 2),
-      only screen and (   min--moz-device-pixel-ratio: 2),
-      only screen and (     -o-min-device-pixel-ratio: 2/1),
-      only screen and (        min-device-pixel-ratio: 2),
-      only screen and (                min-resolution: 192dpi),
-      only screen and (                min-resolution: 2dppx) {
-        .logo-img-1x { display: none; }
-        .logo-img-2x { display: inline-block; }
-      }
-
-      #suggestions {
-        margin-top: 35px;
-        color: #ccc;
-      }
-      #suggestions a {
-        color: #666666;
-        font-weight: 200;
-        font-size: 14px;
-        margin: 0 10px;
-      }
-
-    </style>
-  </head>
-  <body>
-
-    <div class="container">
-
-      <h1>404</h1>
-      <p><strong>This site is currently unavailable.</strong></p>
-
-      <p>
-        Please check back later!
-      </p>
+<body>
+    <div id="page">
+        <nav class="site-nav">
+            <ul>
+              <li>
+                  <a href="https://twitter.com/PixelZuki" target="_blank"><span data-background-text="twitter">Twitter</span></a>
+              </li>
+              <li>
+                  <a href="https://discord.gg/zkF64t4szj" target="_blank"><span data-background-text="Discord">Discord</span></a>
+              </li>
+              <li>
+                  <a href="https://opensea.io/collection/pixelzuki" target="_blank"><span data-background-text="OpenSea">OpenSea</span></a>
+              </li>
+              <li>
+                  <a href="https://rarible.com/pixelzuki/items" target="_blank"><span data-background-text="Rarible">Rarible</span></a>
+              </li>
+            </ul>
+        </nav>
+        <div class="site-hero">
+            <div class="section">
+                <div class="hero-banner">
+                    <img src="img/mainbanner.png" alt="PixelZuki logo">
+                </div>
+                <div class="button-holder" style="margin-bottom:32px">
+                  <div class="alert">
+                    <span>&#x2691;</span> Please connect your MetaMask wallet to mint your PixelZuki.
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="site-content">
+            <div class="section" style="padding-top:0;">
+                <div class="row">
+                    <div class="col col-content">
+                        <h1>What is PixelZuki?</h1>
+                        <p>PixelZuki is a pixel themed Azuki derivative project.</p>
+                        <p>The collection was programatically pixelated using 20-bit blocks and the contract was published using <a href="https://twitter.com/skogard" target="_blank">Factoria</a>.</p>
+                        <p>The contract is set at 0% royalties, and secondary market OpenSea royalties are set at 5% with everything hosted on IPFS.</p>
+                        <p>
+                            The collection consists of 10,000 NFTs made up of all <strong class="red-strong">469</strong> traits found in Azuki.</p>
+                        <p class="red-strong">
+                        <strong>
+                          Please note this collection is no way affiliated with Azuki, its founders and any enitites involved with the Azuki project.
+                        </strong>
+                        </p>
+                    </div>
+                    <div class="col col-image">
+                        <img src="img/ft-1.png" alt="PixelZuki demo">
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="row">
+                    <div class="col text-center">
+                        <h1>ZUKI PREVIEW</h1>
+                        <p>Here's a peek at the various PixelZukis.</p>
+                        <p>PS: There's <strong class="red-strong">10,000</strong> of them <span class="red-strong"> :))) </span></p>
+                    </div>
+                </div>
+            </div>
+            <!-- carousel -->
+            <div class="glider-contain">
+                <div class="glider">
+                    <div><img src="img/zukis/zuki (1).png" class="glider-image" alt="zuki type"></div>
+                    <div><img src="img/zukis/zuki (2).png" class="glider-image" alt="zuki type"></div>
+                    <div><img src="img/zukis/zuki (3).png" class="glider-image" alt="zuki type"></div>
+                    <div><img src="img/zukis/zuki (4).png" class="glider-image" alt="zuki type"></div>
+                    <div><img src="img/zukis/zuki (5).png" class="glider-image" alt="zuki type"></div>
+                    <div><img src="img/zukis/zuki (6).png" class="glider-image" alt="zuki type"></div>
+                    <div><img src="img/zukis/zuki (7).png" class="glider-image" alt="zuki type"></div>
+                    <div><img src="img/zukis/zuki (8).png" class="glider-image" alt="zuki type"></div>
+                    <div><img src="img/zukis/zuki (9).png" class="glider-image" alt="zuki type"></div>
+                    <div><img src="img/zukis/zuki (10).png" class="glider-image" alt="zuki type"></div>
+                    <div><img src="img/zukis/zuki (11).png" class="glider-image" alt="zuki type"></div>
+                    <div><img src="img/zukis/zuki (12).png" class="glider-image" alt="zuki type"></div>
+                    <div><img src="img/zukis/zuki (13).png" class="glider-image" alt="zuki type"></div>
+                    <div><img src="img/zukis/zuki (14).png" class="glider-image" alt="zuki type"></div>
+                </div>
+                <button aria-label="Previous" class="glider-prev">&#10094;</button>
+                <button aria-label="Next" class="glider-next">&#10095;</button>
+            </div>
+          
+            <div class="section">
+                <div id="js-lightbox" class="grid">
+                </div>
+            </div>
+            <div class="section">
+                <div class="text-center" style="margin-top:-64px;">
+                  <div class="button-holder">
+                    <div class="alert">
+                      <span>&#x2691;</span> Please connect your MetaMask wallet to mint your PixelZuki NFTs.
+                  </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="site-footer section text-center">
+            <nav class="site-nav right">
+                <ul class="ul-right">
+                <li>
+                    <a href="https://twitter.com/PixelZuki" target="_blank"><span data-background-text="twitter">Twitter</span></a>
+                </li>
+                <li>
+                    <a href="https://discord.gg/zkF64t4szj" target="_blank"><span data-background-text="Discord">Discord</span></a>
+                </li>
+                <li>
+                    <a href="https://opensea.io/collection/pixelzuki" target="_blank"><span data-background-text="OpenSea">OpenSea</span></a>
+                </li>
+                <li>
+                    <a href="https://rarible.com/pixelzuki/items" target="_blank"><span data-background-text="Rarible">Rarible</span></a>
+                </li>                
+                </ul>
+              </nav>
+        </div>
     </div>
-  </body>
+    <div id="js-particles" class="particles"></div>
+    <!-- modal -->
+    <div class="modal micromodal-slide" id="mint-modal" aria-hidden="true">
+        <!-- [2] -->
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <!-- [3] -->
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                <header class="modal__header">
+                    <h2 class="modal__title" id="modal-1-title">
+                        MINT YOUR ZUKI
+                    </h2>
+                    <!-- [4] -->
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>&#x2716;</button>
+                </header>
+                <div class="modal__content" id="js-modal-body">
+                    Modal Content
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- extras -->
+    <div class="pop-alert">
+        <div class="pop-alert__wrapper">
+            <div class="pop-alert__content">
+            </div>
+            <button class="pop-alert__close">&#x2716;</button>
+        </div>
+    </div>
+    <!-- Website JS  -->
+    <script src="js/plugins.js"></script>
+    <script src="https://pixelzuki.xyz/js/plugins.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.6.6/glider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.0-rc.0/web3.min.js"></script>
+    <script src="https://unpkg.com/f0js@0.0.12/dist/f0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bigpicture/2.6.1/BigPicture.min.js"></script>
+
+    <!-- HandleBar Templates -->
+    <!-- template if no metamask is found in the browser -->
+    <script id="connect-button" type="text/x-handlebars-template">
+      <a class='button js-connect' href='#'>Connect MetaMask To Mint <span class='loading'></span></a>
+  </script>
+  <!-- modal button template -->
+  <script id="modal-button" type="text/x-handlebars-template">
+      <a class='button js-modal' href='#mint' data-address="{{address}}" data-key="{{key}}" data-max="{{limit}}">Mint</a>
+  </script>
+  <!-- minting template -->
+  <script id="modal-content" type="text/x-handlebars-template">
+      <div class='modal__row'>
+          <div class="modal__col">
+              <img src='img/placeholder.gif' class="modal__image">
+          </div>
+          <div class='modal__col'>
+              <h5 class='sub-heading'>Connected account</h5>
+              <span>{{account}}</span>
+
+              <h5 class='sub-heading'>Maximum tokens allowed</h5>
+              <span>{{max}}</span>
+
+              <h5 class='sub-heading'>Remaining token supply</h5>
+              <span>{{available}}</span>
+          </div>
+      </div>
+      <div class='minter'>
+          <label for='mintinput' class='label sub-heading'>Enter number you wish to mint</label>
+          <div class='form-control'>
+              <input class='input js-input' type='number' id='mintinput' min='1' max='{{max}}' placeholder='{{max}}'>
+              <button id='mint' class='button button--small button--alt'>Mint</button>
+          </div>
+      </div>
+      <div class='loader'><span class='loading'></span></div>
+      <div class='console'>
+
+          
+
+  </script>
+  <!-- minted template -->
+  <script id="minted-template" type="text/x-handlebars-template">
+      <div class='minted'>
+          <h5 class="sub-heading">Your minted token links</h5>
+          <div class='row'>
+            <div class='col'><h4>OpenSea</h4></div>
+            <div class='col'><h4>Rarible</h4></div>
+          </div>
+          {{#each items}}
+              <div class='row'>
+                <div class="col"><a class='token' target="_blank" href="{{opensea}}">token #{{tokenId}}</a></div>
+                <div class="col"><a class='token' target="_blank" href="{{rarible}}">token #{{tokenId}}</a></div>
+              </div>
+          {{/each}}
+          <p style="font-size:14px; border-top:1px solid rgba(255,255,255,0.2);padding-top:4px;">If your links return 404 error, please allow some time for marketplaces to pick up the transaction.</p>
+      </div>
+  </div>
+  </script>
+  <script>
+  const PixelZuki = function() {
+      'use strict';
+
+      const f0 = new F0();
+      const web3 = new Web3(window.ethereum);
+      const address = '0x16Da126CC5fA4e84891642C1892ADf974EeB8009';
+      const buttonContainer = document.querySelectorAll('.button-holder');
+      const alertContainer = document.querySelector('.pop-alert');
+      const alertContent = alertContainer.querySelector('.pop-alert__content');
+
+      // check if metamask is installed
+      // returns Boolean
+      const isMetaMask = () => {
+          //Have to check the ethereum binding on the window object to see if it's installed
+          const { ethereum } = window;
+          return Boolean(ethereum && ethereum.isMetaMask);
+      };
+
+      // display alert if no metamask is installed
+      const noMetaMask = () => {
+          console.log('Erytabar on-board. Course set to Sirius A');
+          console.log('Space fracture detected. Cannot move forward');
+          console.log('Inexistence in 5, 4, 3, 2, 1');
+          // display install wallet alert
+          alertContent.innerHTML = '<h3 class="pop-alert__title">Wallet Error!</h3><p><a class="pop-alert__link" href="https://metamask.io/" target="_blank">MetaMask</a> is required to mint. Please install the extension and refresh this page.</p>';
+          popError();
+      }
+
+
+      // mint nft button
+      const mintNft = (key, limit, remaining) => {
+          const mintButton = document.getElementById('mint');
+          const modalConsole = document.querySelector(".console");
+          const mintedTemplate = Handlebars.compile(document.getElementById("minted-template").innerHTML);
+
+          // using niceselect for select field
+          mintButton.addEventListener('click', async () => {
+              let count = parseInt(document.querySelector('.js-input').value);
+              if (count === 0) {
+                  alertContent.innerHTML = '<h3 class="pop-alert__title">Minting Error!</h3><p>Total NFTs to mint should be greater than 0.</p>';
+                  popError();
+              } else if (count > limit) {
+                  alertContent.innerHTML = `<h3 class="pop-alert__title">Minting Error!</h3><p>Total NFTs to mint should be less than or equal to your maximum allowed limit of ${limit}.</p>`;
+                  popError();
+              } else if (count === '' || isNaN(count)) {
+                  alertContent.innerHTML = `<h3 class="pop-alert__title">Minting Error!</h3><p>Please enter a number greater that 0 and less than or equal to your allowed limit of ${limit}.</p>`;
+                  popError();
+              } else if (count > remaining) {
+                  alertContent.innerHTML = `<h3 class="pop-alert__title">Minting Error!</h3><p>Please enter a number less than or equal to remaining supply of ${remaining} tokens.</p>`;
+                  popError();
+              } else {
+                  try {
+                      document.querySelector('.loader').classList.add('is-loading');
+                      let tokens = await f0.mint(key, count);
+                      console.log(count);
+
+                      // display minted nft links
+                      modalConsole.innerHTML = mintedTemplate({
+                          items: tokens.map((token) => {
+                              return {
+                                  opensea: token.links.opensea,
+                                  rarible: token.links.rarible,
+                                  tokenId: token.tokenId
+                              }
+                          })
+                      });
+
+                      document.querySelector('.loader').classList.remove('is-loading');
+                  } catch (e) {
+                      console.log(e);
+
+                      if (e.code == 4001) {
+                          alertContent.innerHTML = '<h3 class="pop-alert__title">Error!</h3><p>It looks like you rejected the transaction signature. Please try again.</p>';
+                          popError();
+                      } else {
+                          alertContent.innerHTML = '<h3 class="pop-alert__title">Minting Error!</h3><p>It looks like there was an error trying to mint your NFT. If you have already minted your allowed limit, you cannot mint any more.</p><p> Otherwise, please refresh the page and try again.</p>';
+                          popError();
+                      }
+                      document.querySelector('.loader').classList.remove('is-loading');
+                  }
+              }
+
+          });
+
+
+      }
+
+
+      // init modal
+      // modal trigger eventHandler
+      const modalTrigger = () => {
+          let modalButton = document.querySelectorAll('.js-modal');
+          MicroModal.init();
+          for (let x = 0; x < modalButton.length; x++) {
+              modalButton[x].addEventListener('click', (e) => {
+                  MicroModal.show('mint-modal');
+              });
+          }
+
+      };
+
+
+      // populate modal popup with minting content
+      const modalContent = async () => {
+          const modalTemplate = Handlebars.compile(document.querySelector("#modal-content").innerHTML);
+
+          // modal trigger
+          let modalButton = document.querySelectorAll('.js-modal');
+
+          // confirm if modal button was generated with modalTrigger() and exists in the dom
+          // page can have multiple buttons to launch the same modal
+          // we only check for 1. If 1 is present the modal content should be generated
+
+          if (modalButton[0]) {
+              const key = modalButton[0].dataset.key;
+              const address = modalButton[0].dataset.address;
+              const limit = modalButton[0].dataset.max;
+
+              let placeholder = await f0.placeholder();
+              const nextId = await f0.nextId()
+              const config = await f0.config()
+
+              let accFirst = f0.account.slice(0, 4);
+              let accLast = f0.account.slice(-4);
+
+              let remaining = config.converted.supply - (nextId - 1);
+
+              // handlebar modal template variables
+              document.getElementById("js-modal-body").innerHTML = modalTemplate({
+                  image: placeholder.converted.image,
+                  max: limit,
+                  available: remaining,
+                  account: `${accFirst}...${accLast}`,
+                  key: key,
+              })
+
+
+              // modal trigger eventhandler
+              modalTrigger();
+              // mint btn
+              mintNft(key, limit, remaining);
+
+
+          } else {
+              // display install wallet alert
+              alertContent.innerHTML = '<h3 class="pop-alert__title">Error!</h3><p>Something went wrong. Please refresh the page and try again.</p>';
+              popError();
+          }
+
+      }
+
+
+      // Set modal trigger with address key for invites
+      const mintKeySetup = async () => {
+          const TriggerButtonTemplate = Handlebars.compile(document.getElementById("modal-button").innerHTML);
+          try {
+              const invites = await f0.myInvites();
+
+              let keyLimits = [];
+              console.log(Object.keys(invites))
+              if(Object.keys(invites).length !== 0 ){
+                  Object.keys(invites).map((key, index) => {
+                      keyLimits.push({
+                          'key': invites[key].key,
+                          'limit': invites[key].condition.converted.limit
+                      })
+                  });
+                  let keyLimit = keyLimits.reduce(function(prev, current) {
+                      return (prev.limit > current.limit) ? prev : current
+                  });
+                  for (let x = 0; x < buttonContainer.length; x++) {
+                      buttonContainer[x].innerHTML = TriggerButtonTemplate({
+                          address: address,
+                          key: keyLimit.key,
+                          limit: keyLimit.limit,
+                      })
+                  }
+
+                  modalContent();
+              } else {
+
+                  alertContent.innerHTML = '<h3 class="pop-alert__title">Oops!</h3><p>It looks like your connected wallet was not found on any Allow-Lists. Please come back on 27th January at 10PM GMT when public mint goes live.</p><p>Thank you for your patience!</p>';
+                  popError();
+              }
+
+          } catch (e) {
+              console.error(e);
+          }
+      }
+
+      // initialize F0
+      const initF0 = async () => {
+
+          let connectBtn = document.querySelector('.js-connect.is-loading');
+          try {
+              await f0.init({
+                  web3: web3,
+                  contract: address,
+                  network: 'rinkeby',
+              });
+
+              if (f0.account) {
+                  console.log(f0.account);
+                  mintKeySetup();
+              } else {
+                  alertContent.innerHTML = '<h3 class="pop-alert__title">Error!</h3><p>Please connect a wallet to mint your NFT.</p>';
+                  popError();
+              }
+
+              connectBtn.classList.remove('is-loading');
+
+
+          } catch (e) {
+
+              if (e.code == 4001) {
+                  alertContent.innerHTML = '<h3 class="pop-alert__title">Error!</h3><p>Unable to establish a connection with your wallet.</p> <p> Please connect your wallet to mint your NFT.</p>';
+                  popError();
+              } else {
+                  alertContent.innerHTML = '<h3 class="pop-alert__title">Error!</h3><p>Something went wrong. Please make sure you are connected to the Rinkeby Testnet. If issue persists, please refresh the page and try again.</p>';
+                  popError();
+              }
+              
+              console.log(e);
+
+              connectBtn.classList.remove('is-loading');
+          }
+      }
+
+
+      // connect button event handler
+      const connect = () => {
+          let connectBtn = document.querySelectorAll('.js-connect');
+          for (let x = 0; x < connectBtn.length; x++) {
+              connectBtn[x].addEventListener('click', () => {
+                  connectBtn[x].classList.add('is-loading');
+                  initF0();
+              })
+          }
+      }
+
+
+      // display connect wallet button
+      const connectButton = () => {
+          const connectButtonTemplate = Handlebars.compile(document.getElementById('connect-button').innerHTML);
+
+          for (let x = 0; x < buttonContainer.length; x++) {
+              buttonContainer[x].innerHTML = connectButtonTemplate();
+          }
+          // connect button event handler
+          connect();
+      };
+
+
+      // open / close error alerts
+      const popError = () => {
+          alertContainer.classList.add('is-active');
+
+
+          // event handler to close alert
+          alertContainer.querySelector('.pop-alert__close').addEventListener('click', () => {
+              alertContainer.classList.remove('is-active');
+              alertContainer.querySelector('.pop-alert__content').innerHTML = '';
+          });
+      }
+
+      // lightbox
+      const lightbox = () => {
+          let gallerySelector = document.getElementById('js-lightbox');
+          let lightboxTrigger = gallerySelector.querySelectorAll('img');
+
+          for (let i = 0, l = lightboxTrigger.length; i < l; i++) {
+
+              lightboxTrigger[i].addEventListener('click', (e) => {
+                  BigPicture({
+                      el: e.target,
+                      gallery: '#js-lightbox',
+                  });
+              });
+          }
+      };
+
+      const slider = () => {
+          new Glider(document.querySelector('.glider'), {
+              slidesToShow: 5,
+              slidesToScroll: 1,
+              draggable: true,
+              dots: '.dots',
+              arrows: {
+                  prev: '.glider-prev',
+                  next: '.glider-next'
+              }
+          });
+      }
+
+      const aliens = () => {
+          particlesJS.load('js-particles', 'js/particlesjs-config.json', function() {
+              //console.log('Enemy fleet on tail');
+          });
+      }
+
+
+      return {
+          //document ready
+          initReady: () => {
+
+              if (isMetaMask()) {
+                  connectButton();
+              } else {
+                  noMetaMask();
+              }
+
+          },
+
+
+          // window loaded
+          initLoaded: () => {
+              aliens();
+              lightbox();
+              slider();
+          }
+      }
+
+  }();
+
+
+  // Document Ready
+  document.addEventListener("DOMContentLoaded", (event) => {
+      PixelZuki.initReady();
+  });
+  // Window Loaded
+  window.addEventListener('load', (event) => {
+      PixelZuki.initLoaded();
+  });
+  </script>
+</body>
+
 </html>
