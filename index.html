@@ -286,7 +286,7 @@
 
       const f0 = new F0();
       const web3 = new Web3(window.ethereum);
-      const address = '0x16Da126CC5fA4e84891642C1892ADf974EeB8009';
+      const address = '0xad199d1B2e3399f62b848D678E5a526C82eb7D48';
       const buttonContainer = document.querySelectorAll('.button-holder');
       const alertContainer = document.querySelector('.pop-alert');
       const alertContent = alertContainer.querySelector('.pop-alert__content');
@@ -499,7 +499,7 @@
                   alertContent.innerHTML = '<h3 class="pop-alert__title">Error!</h3><p>Unable to establish a connection with your wallet.</p> <p> Please connect your wallet to mint your NFT.</p>';
                   popError();
               } else {
-                  alertContent.innerHTML = '<h3 class="pop-alert__title">Error!</h3><p>Something went wrong. Please make sure you are connected to the Rinkeby Testnet. If issue persists, please refresh the page and try again.</p>';
+                  alertContent.innerHTML = '<h3 class="pop-alert__title">Error!</h3><p>Something went wrong. Please make sure you are connected to the Ethereum Mainnet. If issue persists, please refresh the page and try again.</p>';
                   popError();
               }
               
