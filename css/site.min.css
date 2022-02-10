@@ -422,14 +422,15 @@ p {
 }
 
 .loading {
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
     background: url(../img/torii.gif);
     display: none;
     background-size: contain;
-    vertical-align: -3px;
+    vertical-align: -9px;
     margin-left: 2px
 }
+
 
 .button.is-loading {
     color: rgba(255, 255, 255, .4)
