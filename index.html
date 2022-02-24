@@ -293,15 +293,18 @@
   </script>
   <!-- minted template -->
   <script id="minted-template" type="text/x-handlebars-template">
-      <div class='minted'>
+      <div style="text-align: center;" class='minted'>
           <h5 class="sub-heading">Your minted token links</h5>
           <div class='row'>
             <div class='col'><h4>OpenSea</h4></div>
+            <div class='col'><h4>Rarible</h4></div>
+            
             
           </div>
           {{#each items}}
               <div class='row'>
-                <div class="col"><a class='token' target="_blank" href="{{opensea}}">No. #{{tokenId}}</a></div>
+                <div class="col"><a class='token' target="_blank" href="{{opensea}}">#{{tokenId}}</a></div>
+                <div class="col"><a class='token' target="_blank" href="{{rarible}}">#{{tokenId}}</a></div>
                 
               </div>
           {{/each}}
@@ -315,7 +318,7 @@
 
       const f0 = new F0();
       const web3 = new Web3(window.ethereum);
-      const address = '0xad199d1b2e3399f62b848d678e5a526c82eb7d48';
+      const address = '0xad199d1B2e3399f62b848D678E5a526C82eb7D48';
       const buttonContainer = document.querySelectorAll('.button-holder');
       const alertContainer = document.querySelector('.pop-alert');
       const alertContent = alertContainer.querySelector('.pop-alert__content');
@@ -330,9 +333,6 @@
 
       // display alert if no metamask is installed
       const noMetaMask = () => {
-          console.log('Erytabar on-board. Course set to Sirius A');
-          console.log('Space fracture detected. Cannot move forward');
-          console.log('Inexistence in 5, 4, 3, 2, 1');
           // display install wallet alert
           alertContent.innerHTML = '<h3 class="pop-alert__title">Wallet Error!</h3><p><a class="pop-alert__link" href="https://metamask.io/" target="_blank">MetaMask</a> is required to mint. Please install the extension and refresh this page.</p>';
           popError();
@@ -366,11 +366,13 @@
                       let tokens = await f0.mint(key, count);
                       console.log(count);
 
+
                       // display minted nft links
                       modalConsole.innerHTML = mintedTemplate({
                           items: tokens.map((token) => {
                               return {
                                   opensea: token.links.opensea,
+                                  rarible: token.links.rarible,
                                  
                                   tokenId: token.tokenId
                               }
